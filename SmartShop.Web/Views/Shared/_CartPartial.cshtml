@@ -1,0 +1,15 @@
+﻿@using SmartShop.Web.Models
+
+<div class="cart box_1">
+    <a href="/checkout">
+        <h3>
+            <div class="total">
+                <i class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></i>
+                @SessionHelper.ShoppingCart.TotalAmount (@SessionHelper.ShoppingCart.CartItems.Count items)
+            </div>
+
+        </h3>
+    </a>
+    <p><a href="/Cart/ResetCart" class="simpleCart_empty">Empty Cart</a></p>
+
+</div>
